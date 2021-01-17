@@ -1,4 +1,6 @@
+import sys
 import uuid
+
 def get_products():
     fake_response = [{
             "sku": uuid.uuid4(),
@@ -12,3 +14,8 @@ def get_products():
             "price_euro": 1.5
     }]
     return fake_response
+
+def create_product(sku, title, long_description, price_euro):
+    '''Insertar todo esto en una bbdd'''
+    print(f"Crear sku={sku} y title={title}", file=sys.stderr)
+
