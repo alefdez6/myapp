@@ -18,7 +18,7 @@ def list_all_products():
                 data['title'],
                 data['long_description'],
                 data['price_euro'])
-        return jsonify({"status: "ok""})
+        return jsonify({"status": "ok"})
 
 @app.route('/hello')
 def hello_world():
